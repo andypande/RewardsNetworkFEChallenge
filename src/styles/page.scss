@@ -1,0 +1,67 @@
+.page {
+  display: grid;
+  grid-column-gap: 0.8rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(30, auto);
+
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+  width: 100%;
+
+  &__filters {
+    background: white;
+    grid-column: 1 / 4;
+    grid-row: 1;
+    padding: 1rem;
+  }
+
+  &__results {
+    grid-column: 4 / 13;
+    grid-row: 1;
+    padding: 0 1rem;
+  }
+}
+
+.myButton {
+	box-shadow: 0px 0px 0px 0px #1564ad;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:42px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:12px;
+	padding:6px 18px;
+	text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+  margin: 5px 5px 20px 0px;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+span{
+  font-size: 15px;
+}
+
+.searchInput { 
+  font-size:16px; 
+  border-color:#cccccc; 
+  border-style:solid; 
+  border-width:1px; 
+  padding:5px;
+  width: 235px;
+  margin-top: 5px;  
+} 
+.searchInput:focus { outline:none; } 
+
+.noDisplay{
+  display: none;
+}
